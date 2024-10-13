@@ -1,0 +1,10 @@
+Pseudocode:
+
+Start
+  Input: Name, Phone Number
+  If the phonebook is not full:
+    Add Name and Phone Number to the phonebook
+    Output: "Contact added successfully"
+  Else:
+    Output: "Phonebook is full"
+End
