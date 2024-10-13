@@ -1,5 +1,11 @@
 Pseudocode:
 
+/*
+Description: Add a new contact to the phonebook by specifying the name and phone number.
+•	Input: Name, Phone Number
+•	Output: A success message if the contact is added or an error if the phonebook is full.
+*/
+
 Start
   Input: Name, Phone Number
   If the phonebook is not full:
@@ -8,3 +14,81 @@ Start
   Else:
     Output: "Phonebook is full"
 End
+
+/*
+Description: Search for a contact by name and retrieve their phone number.
+•	Input: Name
+•	Output: The contact details if found or an error message if the contact does not exist.
+*/
+
+Start
+  Input: Name to search
+  For each contact in the phonebook:
+    If contact's name matches the search name:
+      Output: Contact details (Name and Phone Number)
+      Exit
+  If no contact is found:
+    Output: "Contact not found"
+End
+
+/*
+Description: Show all the contacts currently stored in the phonebook.
+•	Output: A list of all contacts (name and phone number) or an empty message if no contacts exist.
+*/
+
+Start
+  If the phonebook is not empty:
+    For each contact in the phonebook:
+      Output: Contact details (Name and Phone Number)
+  Else:
+    Output: "Phonebook is empty"
+End
+
+/*
+Description: Delete a contact from the phonebook by providing their name.
+•	Input: Name
+•	Output: A confirmation message if the contact is deleted or an error message if the contact is not found.
+*/
+
+Start
+  Input: Name to delete
+  For each contact in the phonebook:
+    If contact's name matches the delete name:
+      Remove contact from the phonebook
+      Output: "Contact deleted successfully"
+      Exit
+  If no contact is found:
+    Output: "Contact not found"
+End
+
+/*
+Description: Update the phone number of an existing contact by providing their name and new phone number.
+•	Input: Name, New Phone Number
+•	Output: A confirmation message if the contact is updated or an error if the contact is not found.
+*/
+
+Start
+  Input: Name to update, New Phone Number
+  For each contact in the phonebook:
+    If contact's name matches the update name:
+      Update contact's phone number
+      Output: "Contact updated successfully"
+      Exit
+  If no contact is found:
+    Output: "Contact not found"
+End
+
+/*
+Description: Sort all contacts alphabetically by name.
+	Output: A success message if the contacts are sorted or an error message if there are no contacts to sort.
+*/
+
+Start
+  If the phonebook is not empty:
+    Sort contacts alphabetically by name
+    Output: "Contacts sorted successfully"
+  Else:
+    Output: "Phonebook is empty"
+End
+
+
